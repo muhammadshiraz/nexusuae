@@ -1,0 +1,35 @@
+/*### Sass Preloader ###*/
+.preloader {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    img {
+        width: 125px;
+        position: fixed;
+        top: 50%;
+        -webkit-animation-name: fade;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 1.8s;
+        animation-name: fade;
+        animation-iteration-count: infinite;
+        animation-duration: 1.8s;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    @-webkit-keyframes fade {
+        0% {opacity: 0.8;}
+        20% {opacity: 1;}
+        33% {opacity: 1;}
+        53% {opacity: 0.8;}
+        100% {opacity: 0.8;}
+    }
+    @keyframes fade {
+        0% {opacity: 0.8;}
+        20% {opacity: 1;}
+        33% {opacity: 1;}
+        53% {opacity: 0.8;}
+        100% {opacity: 0.8;}
+    }
+}

@@ -1,0 +1,456 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $geebung;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+#main__wrapper {
+    header {
+        .main_banner {
+            background-image: url(../images/banner.jpg);
+            background-size: 100% 100%;
+            min-height: 620px;
+            height: 100%;
+            .ideas__shape {
+                background-image: url(../images/ideas-shape.png);
+                background-size: contain;
+                min-height: 627px;
+                width: 52%;
+                background-repeat: no-repeat;
+                height: 100%;
+                display: table;
+                @media #{$tablet} {
+                    background-image: none;
+                }
+                @media #{$desktop} {
+                    min-height: 628px;
+                    width: 70%;
+                }
+                .col-7 {
+                    display: table;
+                    height: 100%;
+                    .shape__content {
+                        display: table-cell;
+                        vertical-align: middle;
+                        padding-left: 20%;
+                        span {
+                            font-size: 42px;
+                            font-family: $Poppinslight;
+                            color: $black;
+                        }
+                        h1 {
+                            font-size: 112px;
+                            font-family: $Poppinsregular;
+                            color: $black;
+                            padding: 0 0 8px 0;
+                            margin-bottom: 5px;
+                            position: relative;
+                            &:before {
+                                width: 63px;
+                                height: 3px;
+                                content: "";
+                                background: $white;
+                                bottom: 0;
+                                position: absolute;
+                            }
+                        }
+                        p {
+                            font-size: 22px;
+                            font-family: $Poppinsregular;
+                            color: $black;
+                            span {
+                                font-family: $PoppinssemiBold;
+                                color: $black;
+                                font-size: 22px;
+                            }
+                        }
+                        .start__btn {
+                            font-family: $PoppinssemiBold;
+                            color: $black;
+                            background-color: #fff;
+                            text-transform: uppercase;
+                            font-size: 15px;
+                            border: 0;
+                            padding: 18px 55px;
+                            border-radius: 50px;
+                            outline: none;
+                        }
+                        .scroll__arrow {
+                            position: absolute;
+                            right: 2vw;
+                            bottom: 2vw;
+                            -webkit-animation: bounce 2s;
+                            animation: bounce 2s;
+                            -webkit-animation-iteration-count: infinite;
+                            animation-iteration-count: infinite;
+                            @media #{$tablet} {
+                                right: 28%;
+                            }
+                            @media #{$desktop} {
+                                right: 28%;
+                            }  
+                            @media #{$l-desktop} {
+                                right: 2vw;
+                            }
+                            @media #{$xl-desktop} {
+                                right: 7vw;
+                            }                          
+                            @-webkit-keyframes bounce {
+                                0%,
+                                25%,
+                                50%,
+                                75%,
+                                100% {
+                                    -webkit-transform: translateY(0);
+                                    transform: translateY(0);
+                                }
+                                40% {
+                                    -webkit-transform: translateY(-20px);
+                                    transform: translateY(-20px);
+                                }
+                                60% {
+                                    -webkit-transform: translateY(-12px);
+                                    transform: translateY(-12px);
+                                }
+                            }                            
+                            @keyframes bounce {
+                                0%,
+                                25%,
+                                50%,
+                                75%,
+                                100% {
+                                    -webkit-transform: translateY(0);
+                                    transform: translateY(0);
+                                }
+                                40% {
+                                    -webkit-transform: translateY(-20px);
+                                    transform: translateY(-20px);
+                                }
+                                60% {
+                                    -webkit-transform: translateY(-12px);
+                                    transform: translateY(-12px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        .nav_bar {
+            position: absolute;
+            width: 100%;
+            nav {
+                border-top: 1px solid #545353;
+                @media #{$tablet} {
+                    border-top: 0;
+                }
+                @media #{$desktop} {
+                    border-top: 0;
+                }
+                &:before {
+                    content: "";
+                    border-top: 1px solid #545353;
+                    position: absolute;
+                    right: -38px;
+                    width: 50px;
+                    top: -1px;
+                    height: 2px;
+                    @media #{$tablet} {
+                        border-top: 0;
+                    }
+                    @media #{$desktop} {
+                        border-top: 0;
+                    }
+                }
+                &:after {
+                    content: "";
+                    border-top: 1px solid #545353;
+                    position: absolute;
+                    left: -10vw;
+                    width: 10vw;
+                    top: -1px;
+                    @media #{$tablet} {
+                        border-top: 0;
+                    }
+                    @media #{$desktop} {
+                        border-top: 0;
+                    }
+                }
+                li {
+                    font-family: $Poppinslight;
+                    font-size: 13px;
+                    &.active {
+                        a {
+                            font-family: $PoppinssemiBold;
+                        }
+                    }
+                    a {
+                        text-transform: uppercase;
+                        color: $white;
+                        &:hover {
+                            color: $geebung;
+                        }
+                    } 
+                }
+                .cell__btn {
+                    width: 175px;
+                    position: relative;
+                    a {
+                        background: #fff;
+                        display: block;
+                        padding: 12px 30px;
+                        border-radius: 50px;
+                        text-align: center;
+                        font-family: $PoppinssemiBold;
+                        color: $black;
+                        text-decoration: none;
+                        &:hover {
+                            background: #eea739;
+                        }
+                    }
+                }
+            }
+        }
+        .topbar_nav {
+            float: right;
+            padding: 10px 0;
+            ul {
+                li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 11px;
+                    border-left: 1px solid #664c3f;
+                    padding: 0 10px;
+                    a {
+                        text-decoration: none;
+                        outline: none;                        
+                        font-family: $Poppinsregular;
+                        color: $dustygray;
+                        text-transform: uppercase;
+                        .fa {
+                            color: $white;
+                            font-size: 14px;
+                        }
+                    }
+                    &:nth-child(6) {
+                        margin: 0;
+                        border-left: 0;
+                        padding: 0;
+                    }
+                }
+            }            
+        }
+    }
+    #services_sec {
+        background-image: url(../images/services.png);
+        background-repeat: no-repeat;
+        background-position: 0 30%;
+        padding: 80px 0;
+        display: table;
+        width: 100%;
+        background-size: 30%;
+        .service_title {
+            h2 {
+                font-size: 70px;
+                font-family: $PoppinssemiBold;
+                color: $black;
+                padding: 0 0 8px 0;
+                margin-bottom: 5px;
+                position: relative;
+                &:before {
+                    width: 63px;
+                    height: 3px;
+                    content: "";
+                    background: #eea739;
+                    bottom: -3px;
+                    position: absolute;
+                }
+                span {
+                    font-size: 50px;
+
+                }
+            }
+            p {
+                font-size: 16px;
+                color: #828282;
+                font-family: $Poppinsregular;
+                line-height: 25px;
+            }
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            .service_box {
+                margin-bottom: 30px;
+                background: #fff;
+                min-height: 275px;
+                width: 100%;
+                border-radius: 10px;
+                transition-duration: 0.3s;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    width: 33px;
+                    height: 2px;
+                    background: #eea739;
+                    left: 15px;
+                    bottom: 22px;
+                }
+                &:hover {
+                    box-shadow: 0px 6px 12px 3px #e6e6e6;
+                    transition-duration: 0.3s;
+                    transform: translateY(-10px);
+                    .service_box_header {
+                        background: #eea739;
+                        transition-duration: 0.3s;
+                    }
+                    .mob_app {
+                        &:before {
+                            background-position: -108px -13px !important;
+                        }
+                    }
+                    .enterprise_app {
+                        &:before {
+                            background-position: -108px -97px !important;
+                        }
+                    }
+                    .brand_identity {
+                        &:before {
+                            background-position: -118px -182px !important;
+                        }
+                    }
+                    .iot {
+                        &:before {
+                            background-position: -110px -266px !important;
+                        }
+                    }
+                    .big_data {
+                        &:before {
+                            background-position: -118px -355px !important;
+                        }
+                    }
+                    .cloud_service {
+                        &:before {
+                            background-position: -112px -444px !important;
+                        }
+                    } 
+                }
+                .service_box_header {
+                    height: 78px;
+                    position: relative;
+                    transition-duration: 0.3s;  
+                    border-top-right-radius: 10px;
+                    border-top-left-radius: 10px; 
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 64px;
+                        height: 56px;
+                        background: url(../images/sprite.png) no-repeat;
+                        left: 20px;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                    }
+                    &.mob_app {
+                        &:before {
+                            background-position: -18px -13px;
+                        }
+                    }
+                    &.enterprise_app {
+                        &:before {
+                            background-position: -18px -97px;
+                        }
+                    }
+                    &.brand_identity {
+                        &:before {
+                            background-position: -25px -180px;
+                        }
+                    }
+                    &.iot {
+                        &:before {
+                            background-position: -20px -266px;
+                        }
+                    }   
+                    &.big_data {
+                        &:before {
+                            background-position: -27px -355px;
+                        }
+                    }
+                    &.cloud_service {
+                        &:before {
+                            background-position: -22px -444px;
+                        }
+                    }       
+                }
+                .service_box_body {
+                    h3 {
+                        font-size: 16px;
+                        line-height: 1.4;
+                        font-weight: 700;
+                        margin-top: 15px;
+                        margin-bottom: 19px;
+                        font-family: $Poppinsbold;
+                        padding: 0px 15px;
+                        color: $black;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        padding: 0px 15px;
+                        font-size: 14px;
+                        font-family: $Poppinslight;
+                        line-height: 1.3;
+                        font-weight: 400;
+                        color: #828282;
+                    }
+                }            
+            }
+        }
+    }
+    #servicesCarousel {
+        margin-top: 50%;
+        .carousel_arrow {
+            display: block;
+            background: #d1d1d1;
+            margin-top: 33%;
+            float: right;
+            padding: 7px 18px;
+            border-radius: 50px;
+            .carousel-control-prev,
+            .carousel-control-next {            
+                position: inherit;
+                margin: 0;
+                display: inline-block;
+                width: 27px;
+                opacity: 1;
+                span {
+                    vertical-align: middle;
+                }
+            }
+            .carousel-control-next {
+                span {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}

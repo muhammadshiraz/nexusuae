@@ -2,4 +2,4 @@
 ## Dubai’s Leading Digital Agency.
 #### Explore it: http://muhammadshiraz.com/nexusuae/
 ### Desktop Version
-![Publications-Bibliography](https://user-images.githubusercontent.com/45601530/76686975-a1b32100-6641-11ea-9159-d55ff40a3bfc.jpg)
+![Nexus_-UAE-Website](https://user-images.githubusercontent.com/45601530/78338326-0233df00-75ac-11ea-9de6-f0dbb2d57192.jpg)

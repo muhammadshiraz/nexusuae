@@ -1,11 +1,4 @@
 # NEXUS UAE
-Dubai’s Leading Digital Agency.
-
-
-
-
-
-# NEXUS UAE
 ## Dubai’s Leading Digital Agency.
 #### Explore it: http://muhammadshiraz.com/nexusuae/
 ### Desktop Version
